@@ -1,0 +1,16 @@
+.hero-section {
+  background: url(../../assets/images/hero-section-bg.png) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 600px;
+}
+
+.hero-section .left-content {
+  width: 600px;
+  /* border: 1px solid red; */
+  padding: 100px 0;
+}
