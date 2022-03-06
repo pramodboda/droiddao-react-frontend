@@ -2,8 +2,11 @@
   /* border: 1px solid red; */
   background: #333;
   display: block;
+  position: relative;
+  z-index: 999;
+  /* opacity: 0.9; */
 }
-.brandLogo {
+.droiddao-navbar .brandLogo {
   /* border: 1px solid red; */
   float: left;
   display: inline;
@@ -22,11 +25,6 @@
   /* border: 1px solid red; */
   float: left;
   position: relative;
-}
-
-.droiddao-nav .droiddao-nav-item a,
-.droiddao-subnav {
-  transition: all 6ms ease-in-out 6ms;
 }
 
 .droiddao-nav .droiddao-nav-item a {
@@ -51,6 +49,8 @@
   padding: 0;
   margin: 0;
   border: 1px solid #666666;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
 }
 .droiddao-nav-item .dropdown-toggle {
   white-space: nowrap;
@@ -74,6 +74,9 @@
 .droiddao-subnav li.droiddao-nav-item {
   display: block;
   width: 100%;
+}
+
+.droiddao-subnav li.droiddao-nav-item:not(:last-child) {
   border-bottom: 1px solid #666;
 }
 

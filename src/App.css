@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 h1,
@@ -21,6 +21,13 @@ h6 {
 .droiddao-container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.droiddao-nav .droiddao-nav-item a,
+.droiddao-subnav,
+.droiddao-subnav li.droiddao-nav-item a,
+.footer-section__nav a {
+  transition: all 200ms ease-in-out;
 }
 
 .pushable {
@@ -91,14 +98,59 @@ h6 {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
-.pushable:hover .shadow {
-  transform: translateY(4px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
+
 .pushable:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
 }
 .pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+/* swiper */
+.slider-controls {
+  width: 100px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.slider-controls .prev-btn,
+.slider-controls .next-btn {
+  border: 1px solid #944500;
+  color: #944500;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 54px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f9f9f9;
+  float: left;
+}
+.slider-controls .prev-btn:hover,
+.slider-controls .next-btn:hover {
+  background: #ffd216;
+  border: 1px solid #ffd216;
+}
+.slider-controls .prev-btn {
+  margin-right: 7px;
+}
+.live-projects-swiper,
+.closed-projects-swiper {
+  padding-bottom: 25px;
+}
+
+/* mui overwrites */
+
+.MuiFormControl-root .MuiInputLabel-root.Mui-focused {
+  color: #e65100;
+}
+.MuiTextField-root .MuiFilledInput-root:after {
+  border-bottom: 2px solid #e65100;
+}
+.MuiButton-endIcon {
+  margin-left: 0;
+}
+
+.MuiButton-root.MuiButton-text {
+  color: #e65100;
 }

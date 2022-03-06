@@ -1,0 +1,33 @@
+.footer-section {
+  background: #333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-section__nav {
+  list-style: none;
+  padding: 0;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.footer-section__nav li {
+  float: left;
+}
+.footer-section__nav a {
+  color: #ffd216;
+  text-decoration: none;
+  padding: 12px;
+  border-bottom: 2px solid transparent;
+  display: block;
+}
+
+.footer-section__nav a:hover {
+  color: #f3f3f3;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.footer-section .brandLogo,
+.footer-section__nav {
+  margin-bottom: 15px;
+}
